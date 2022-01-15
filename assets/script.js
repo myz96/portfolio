@@ -94,8 +94,8 @@ $(document).ready(function(){
 
 //PROJECT RENDERING
 
-var numProjShown = 2;
-var numProjTotal = 2;
+var numProjShown = 3;
+var numProjTotal = 4;
 
 var projects = {
 
@@ -107,19 +107,26 @@ var projects = {
     "picture": "assets/ravesupplement-thumbnail.png",
   },
   "proj1": {
+    "title": "Expense Tracker App",
+    "projName": "Empowering Financial Health",
+    "desc": "Meeting a New Years resolution to reduce unnecessary expenditure through improving ease of tracking and thus accountability.",
+    //"link": "#",
+    "picture": "assets/expensetracker-thumbnail.png",
+  },
+  "proj2": {
     "title": "Unimelb GPA Calculator",
     "projName": "Automatic GPA conversion",
     "desc": "Addressing the need for University of Melbourne students to quickly and effortlessly convert scores to GPA equivalents.",
     //"link": "#",
     "picture": "assets/gpacalc-thumbnail.png",
   },
-/*   "proj2": {
-    "title": "Platform Shopper Pricing Strategy",
-    "projName": "Pricing mechanism design",
+   "proj3": {
+    "title": "Grocery Delivery Startup in San Fran",
+    "projName": "Sentiment & Supply Valuation",
     "desc": "Evaluating supply-side pricing mechanisms for technology platform company to maximise supplier retention and utilisation.",
     //"link": "#",
     "picture": "assets/platformshopper-thumbnail.png",
-  }, */
+  }, 
 }
 
 function createProj(proj) {
