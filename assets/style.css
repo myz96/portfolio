@@ -49,7 +49,7 @@ button:focus {outline:0;}
 }
 
 .full-height{
-    height: 100vh;
+    height: 80vh;
 }
 
 #HeroVid {
@@ -819,9 +819,9 @@ button.resume:hover{
         width: 100%;
     }
     .large-img{
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 50%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .leftPanel{
         width: 100% !important;
