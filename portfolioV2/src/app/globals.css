@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --font-mont: 'Monsterrat', sans-serif;
+  --font-news: 'Times New Roman', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  font-family: var(--font-mont);
+}
+
+h1 {
+  font-family: var(--font-news);
+}
+
+.rectangle {
+  display: inline-block;
+  width: 1.9px;
+  height: 30px;
+  background-color: #CB363F;
+  margin-right:3px;
+}
