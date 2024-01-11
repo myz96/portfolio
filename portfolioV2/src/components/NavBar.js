@@ -13,14 +13,11 @@ const NavBar = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-10">
+    <header className="absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-10 ">
       <div className="w-1/4 flex justify-center">
       <Link href="#Home">
         <div className="px-16 py-3 flex items-center justify-center">
-          {/* Not rendering image */}
             <Image src="/website-logo.png" alt="Logo" layout="fixed" width={40} height={40} />
-          {/* <img src="/website-logo.png" width={40} height={40} alt="Logo" /> */}
-          {/* <Image src={logo} width={40} height={40} alt="Logo" />  */}
         </div>
       </Link>
       </div>
