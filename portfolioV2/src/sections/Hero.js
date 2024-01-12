@@ -21,18 +21,17 @@ const Hero = () => {
   return (
     <div className="relative" id="Home">
       <div className="z-[-2] absolute top-0 left-0 w-full h-full">
-        {/* TODO: Insert maple tree with falling leaf */}
+        {/* TODO: Insert falling leaves */}
         <img
           src="/japanese-maple-bg.jpeg"
           className="w-[500px] top-0 left-0 xl:max-w-full"
         />
       </div>
-      <div className="flex flex-col justify-center items-center py-64">
+      <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="text-7xl font-bold my-2">michael zhao</h1>
         <h2 className="text-lg font-thin my-4">
           // just a boy trying his best to learn //
         </h2>
-        {/* TODO: Update Techstack into Logos */}
         <div className="flex items-center justify-center flex-wrap my-4 max-w-10">
           <motion.a href="/" whileHover={{ y: -4 }}>
             <HTMLIcon className="w-6 mr-3" />

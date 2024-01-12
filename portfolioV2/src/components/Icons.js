@@ -1,11 +1,9 @@
 export const CSSIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     fill="none"
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path fill="#1172B8" d="M6 28 4 3h24l-2 25-10 3-10-3Z" />
@@ -20,10 +18,8 @@ export const CSSIcon = ({ className, ...rest }) => (
 export const ExpressIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957 6.272 6.272 0 0 1-7.306-.933 6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
@@ -33,11 +29,9 @@ export const ExpressIcon = ({ className, ...rest }) => (
 export const HTMLIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     fill="none"
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path fill="#E44D26" d="M6 28 4 3h24l-2 25-10 3-10-3Z" />
@@ -54,7 +48,7 @@ export const JSIcon = ({ className, ...rest }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-label="JavaScript"
     viewBox="0 0 512 512"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <rect width={512} height={512} fill="#f7df1e" rx="15%" />
@@ -65,10 +59,8 @@ export const JSIcon = ({ className, ...rest }) => (
 export const MongoIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <defs>
@@ -143,11 +135,9 @@ export const MongoIcon = ({ className, ...rest }) => (
 export const NextIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     preserveAspectRatio="xMidYMid"
     viewBox="0 -101.5 512 512"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path d="M120.81 80.561h96.568v7.676h-87.716v57.767h82.486v7.675h-82.486v63.423h88.722v7.675H120.81V80.561Zm105.22 0h10.26l45.467 63.423L328.23 80.56 391.441 0l-103.85 150.65 53.515 74.127h-10.663l-48.686-67.462-48.888 67.462h-10.461l53.917-74.128-50.296-70.088Zm118.898 7.676V80.56h110.048v7.676h-50.699v136.54h-8.852V88.237h-50.497ZM0 80.56h11.065l152.58 228.323-63.053-84.107L9.254 91.468l-.402 133.31H0V80.56Zm454.084 134.224c-1.809 0-3.165-1.4-3.165-3.212 0-1.81 1.356-3.212 3.165-3.212 1.83 0 3.165 1.401 3.165 3.212 0 1.811-1.335 3.212-3.165 3.212Zm8.698-8.45h4.737c.064 2.565 1.937 4.29 4.693 4.29 3.079 0 4.823-1.854 4.823-5.325v-21.99h4.823v22.011c0 6.252-3.617 9.853-9.603 9.853-5.62 0-9.473-3.493-9.473-8.84Zm25.384-.28h4.78c.409 2.953 3.294 4.828 7.45 4.828 3.875 0 6.717-2.005 6.717-4.764 0-2.371-1.809-3.794-5.921-4.764l-4.005-.97c-5.62-1.316-8.181-4.032-8.181-8.602 0-5.54 4.521-9.227 11.303-9.227 6.308 0 10.916 3.686 11.196 8.925h-4.694c-.452-2.867-2.95-4.657-6.567-4.657-3.81 0-6.35 1.833-6.35 4.635 0 2.22 1.635 3.493 5.683 4.441l3.423.841c6.373 1.488 9 4.075 9 8.753 0 5.95-4.607 9.68-11.97 9.68-6.89 0-11.52-3.558-11.864-9.12Z" />
@@ -157,11 +147,9 @@ export const NextIcon = ({ className, ...rest }) => (
 export const NodeIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     fill="none"
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path
@@ -178,11 +166,9 @@ export const NodeIcon = ({ className, ...rest }) => (
 export const PostgreIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     preserveAspectRatio="xMidYMid"
     viewBox="-4 0 264 264"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path d="M255.008 158.086c-1.535-4.649-5.556-7.887-10.756-8.664-2.452-.366-5.26-.21-8.583.475-5.792 1.195-10.089 1.65-13.225 1.738 11.837-19.985 21.462-42.775 27.003-64.228 8.96-34.689 4.172-50.492-1.423-57.64C233.217 10.847 211.614.683 185.552.372c-13.903-.17-26.108 2.575-32.475 4.549-5.928-1.046-12.302-1.63-18.99-1.738-12.537-.2-23.614 2.533-33.079 8.15-5.24-1.772-13.65-4.27-23.362-5.864-22.842-3.75-41.252-.828-54.718 8.685C6.622 25.672-.937 45.684.461 73.634c.444 8.874 5.408 35.874 13.224 61.48 4.492 14.718 9.282 26.94 14.237 36.33 7.027 13.315 14.546 21.156 22.987 23.972 4.731 1.576 13.327 2.68 22.368-4.85 1.146 1.388 2.675 2.767 4.704 4.048 2.577 1.625 5.728 2.953 8.875 3.74 11.341 2.835 21.964 2.126 31.027-1.848.056 1.612.099 3.152.135 4.482.06 2.157.12 4.272.199 6.25.537 13.374 1.447 23.773 4.143 31.049.148.4.347 1.01.557 1.657 1.345 4.118 3.594 11.012 9.316 16.411 5.925 5.593 13.092 7.308 19.656 7.308 3.292 0 6.433-.432 9.188-1.022 9.82-2.105 20.973-5.311 29.041-16.799 7.628-10.86 11.336-27.217 12.007-52.99.087-.729.167-1.425.244-2.088l.16-1.362 1.797.158.463.031c10.002.456 22.232-1.665 29.743-5.154 5.935-2.754 24.954-12.795 20.476-26.351" />
@@ -205,8 +191,6 @@ export const ReactIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={800}
-    height={800}
     style={{
       fillRule: "evenodd",
       clipRule: "evenodd",
@@ -214,7 +198,7 @@ export const ReactIcon = ({ className, ...rest }) => (
       strokeMiterlimit: 2,
     }}
     viewBox="0 0 64 64"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path
@@ -255,10 +239,8 @@ export const ReactIcon = ({ className, ...rest }) => (
 export const TailwindIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <title>{"file_type_tailwind"}</title>
@@ -274,11 +256,9 @@ export const TailwindIcon = ({ className, ...rest }) => (
 export const PythonIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
     fill="none"
     viewBox="0 0 32 32"
-    className={`w-full h-auto ${className}`}
+    className={`h-auto ${className}`}
     {...rest}
   >
     <path
