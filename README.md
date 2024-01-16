@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
+Welcome to my portfolio website! Here you'll find a collection of my projects that showcase my skills in full-stack development. I'm passionate about creating dynamic, user-friendly applications using a variety of technologies.
 
-## Getting Started
+## Skills
+- Languages: JavaScript, Python
+- Front-End: HTML, CSS, React, Next.js, Tailwind CSS
+- Back-End: Node.js, Express
+- Databases: MongoDB, PostgreSQL
 
-First, run the development server:
+## Purpose
+The purpose of this repository is to demonstrate my ability to build full-stack applications. I focus on creating efficient, scalable, and user-friendly software solutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Projects
+### Second Brain App
+Description: A dynamic application that integrates ChatGPT with VisJS for visual data representation. The backend is built with MongoDB and Express.
+Technologies: JavaScript, MongoDB, Express, ChatGPT, VisJS
+Features:
+- Integration with ChatGPT for intelligent data processing.
+- Interactive data visualization using VisJS.
+- Robust backend with MongoDB and Express.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### LearnIT - GPT Quiz Generator
+Description: An educational tool that generates quizzes using GPT technology. Aimed at making learning more interactive and fun.
+Technologies: JavaScript, React, Node.js, GPT
+Features:
+- Automated quiz generation using GPT.
+- Interactive UI built with React.
+- Server-side logic with Node.js.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### HoopsIQ - Basketball Player Guessing Game
+Description: A fun and engaging game where users guess basketball players based on various hints.
+Technologies: JavaScript, HTML, CSS, React
+Features:
+- Interactive gameplay focused on basketball trivia.
+- Sleek user interface created with React and Tailwind CSS.
+- Responsive design for a seamless experience on all devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Plus many more! Check the link out below to see it in action
+[Portfolio website](https://michaelyzhao.com/)
