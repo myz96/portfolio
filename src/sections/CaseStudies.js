@@ -95,7 +95,7 @@ const CaseStudies = () => {
             description="Overcoming stigma and addressing mental health needs of Chinese Australians. We are doing this by providing easy access to culturally appropriate tools and resources. "
             gitURL="https://github.com/myz96/project-red-door"
             webURL="#"
-            previewSrc="/"
+            previewSrc="/projectreddoor-mock.png"
           />
 
           <CaseCard
