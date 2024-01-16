@@ -7,12 +7,6 @@ const mont = Montserrat({
   display: "swap",
 });
 
-const news = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-news",
-  display: "swap",
-});
-
 export const metadata = {
   title: "Michael Zhao",
   description: "Personal Portfolio",
@@ -20,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={` bg-grey scroll-smooth ${mont.variable} ${news.variable}`}>
+    <html lang="en" className={` scroll-smooth ${mont.variable}`}>
       <body>{children}</body>
     </html>
   );

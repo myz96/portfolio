@@ -2,26 +2,41 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [active, setActive] = useState(null);
+  const [isTransparent, setIsTransparent] = useState(true)
 
   const makeActive = (label) => {
     setActive(label);
   };
 
-  const [isTransparent, setIsTransparent] = useState(true)
 
-  const toggleTransparent = () => {
-    if (window.scrollY >= 30) {
-      setIsTransparent(false)
-    } else {
-      setIsTransparent(true)
-    }
-  }
+  // const toggleTransparent = () => {
+  //   if (window.scrollY >= 30) {
+  //     setIsTransparent(false)
+  //   } else {
+  //     setIsTransparent(true)
+  //   }
+  // }
 
-  window.addEventListener('scroll', toggleTransparent)
+  // window.addEventListener('scroll', toggleTransparent)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 30) {
+        setIsTransparent(false);
+      } else {
+        setIsTransparent(true);
+      }
+    };
+
+    // Add event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header className={isTransparent ? "absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-5 sticky bg-white" : "absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-10 sticky bg-white/70 backdrop-blur-sm"}>
