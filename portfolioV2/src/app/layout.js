@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${mont.variable} ${news.variable}`}>
+    <html lang="en" className={` bg-grey scroll-smooth ${mont.variable} ${news.variable}`}>
       <body>{children}</body>
     </html>
   );

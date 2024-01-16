@@ -14,7 +14,7 @@ export const CaseCard = ({
   return (
     <div className="flex my-40">
       <div className="flex flex-col w-1/2 pr-12">
-        <h3 className="text-lg font-bold my-8">{title}</h3>
+        <h3 className="text-lg font-bold mb-8">{title}</h3>
         <h2 className="text-3xl font-bold leading-relaxed tracking-widerest my-4 uppercase">
           {subtitle}
         </h2>
@@ -28,23 +28,12 @@ export const CaseCard = ({
           </Link>
         </div>
       </div>
-      <div className="w-1/2">
-        <motion.div
-          className="relative rounded-3xl"
-          whileHover={{
-            color: "#CB363F",
-            y: -4,
-            boxShadow: "0px 8px 20px rgba(0,0,0,0.1)",
-            overflow: "No"
-          }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ duration: 0.2, ease: "easeIn" }}
-        >
+      <div className="relative w-1/2">
           <Link
-            href="#"
-            className="absolute flex items-center justify-center top-10 -left-10 bg-primaryLight/40 text-white rounded-full w-[80px] h-[80px]"
+            href={webURL}
+            className="absolute flex items-center justify-center top-10 -left-10 bg-secondary/60 text-white rounded-full w-[80px] h-[80px] z-10"
           >
-            <div className="flex items-center justify-center bg-primary rounded-full w-[60px] h-[60px]">
+            <div className="flex items-center justify-center bg-primary rounded-full w-[60px] h-[60px] z-10">
               <Image
                 src="/arrow-right.png"
                 width={25}
@@ -53,11 +42,22 @@ export const CaseCard = ({
               />
             </div>
           </Link>
-          <Link href="#">
-            <div className="flex my-8 items-center justify-center bg-primary text-white w-full h-[200px] rounded-3xl shadow-md"></div>
+          <Link href={webURL}>
+            <motion.div
+              className="absolute rounded-3xl overflow-hidden"
+              whileHover={{
+                color: "#CB363F",
+                y: -10,
+                boxShadow: "0px 32px 80px rgba(0,0,0,0.3)",
+                overflow: "No"
+              }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+            >
+                <Image src={previewSrc} alt={title} width={640} height={360} />
+            </motion.div>
           </Link>
-        </motion.div>
+        </div>
       </div>
-    </div>
   );
 };

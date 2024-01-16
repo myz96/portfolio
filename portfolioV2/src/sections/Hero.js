@@ -20,12 +20,10 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="relative" id="Home">
-      <div className="z-[-2] absolute top-0 left-0 w-full h-full">
-        {/* TODO: Insert falling leaves */}
-        <img
-          src="/japanese-maple-bg.jpeg"
-          className="w-[500px] top-0 left-0 xl:max-w-full"
-        />
+      <div className="z-[-2] absolute top-0 left-0 w-full h-full bg-white">
+        <video autoPlay muted style={{ width: '1600px', height: '500'}}>
+          <source src="/background-animate.mp4"/>
+        </video>
       </div>
       <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="text-7xl font-bold my-2">michael zhao</h1>

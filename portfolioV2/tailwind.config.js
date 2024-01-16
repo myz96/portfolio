@@ -17,6 +17,8 @@ module.exports = {
         primary: "#CB363F",
         primaryDark: "#58E6D9",
         primaryLight: "#cb5936",
+        secondary: "#C15B4E",
+        grey: "#f7f7f7",
       },
       letterSpacing: {
         widerest: ".5em",
