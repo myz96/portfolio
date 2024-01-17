@@ -12,8 +12,8 @@ export const CaseCard = ({
   previewSrc,
 }) => {
   return (
-    <div className="flex my-40">
-      <div className="flex flex-col w-1/2 pr-12">
+    <div className="flex flex-col md:flex-row my-40">
+      <div className="flex flex-col m-4 md:w-1/2 md:pr-12">
         <h3 className="text-lg font-bold mb-8">{title}</h3>
         <h2 className="text-3xl font-bold leading-relaxed tracking-widerest my-4 uppercase">
           {subtitle}
@@ -28,12 +28,12 @@ export const CaseCard = ({
           </Link>
         </div>
       </div>
-      <div className="relative w-1/2">
+      <div className="relative p-4 mb-10 md:w-1/2">
           <Link
             href={webURL}
-            className="absolute flex items-center justify-center top-10 -left-10 bg-secondary/60 text-white rounded-full w-[80px] h-[80px] z-10"
+            className="absolute flex items-center justify-center top-10 -left-2 md:top-10 md:-left-10 bg-secondary/60 text-white rounded-full  w-[50px] h-[50px] md:w-[80px] md:h-[80px] z-10"
           >
-            <div className="flex items-center justify-center bg-primary rounded-full w-[60px] h-[60px] z-10">
+            <div className="flex items-center justify-center bg-primary rounded-full w-[30px] h-[30px] md:w-[60px] md:h-[60px] z-10">
               <Image
                 src="/arrow-right.png"
                 width={25}

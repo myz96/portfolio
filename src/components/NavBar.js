@@ -12,16 +12,6 @@ const NavBar = () => {
     setActive(label);
   };
 
-
-  // const toggleTransparent = () => {
-  //   if (window.scrollY >= 30) {
-  //     setIsTransparent(false)
-  //   } else {
-  //     setIsTransparent(true)
-  //   }
-  // }
-
-  // window.addEventListener('scroll', toggleTransparent)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 30) {
@@ -31,16 +21,14 @@ const NavBar = () => {
       }
     };
 
-    // Add event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header className={isTransparent ? "absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-5 sticky bg-white" : "absolute top-0 left-0 w-full font-medium flex items-stretch justify-between text-sm z-10 sticky bg-white/70 backdrop-blur-sm"}>
-      <div className="w-1/4 flex justify-center">
+      <div className="w-full md:w-1/4 md:flex justify-center">
       <Link href="#Home">
         <div className="m-2 px-16 py-1 flex items-center justify-center">
             <Image src="/website-logo.png" alt="Logo" layout="fixed" width={40} height={40} />
@@ -49,7 +37,7 @@ const NavBar = () => {
       </div>
 
 
-      <div onClick={() => makeActive("home")} className="w-1/4">
+      <div onClick={() => makeActive("home")} className="hidden md:block md:w-1/4">
         <Link href="#Home">
           <div className="m-2 px-16 py-1 hover:bg-black hover:bg-opacity-5 flex justify-center items-center rounded-lg w-full">
             {"home" === active && <div className="rectangle"></div>}
@@ -58,7 +46,7 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <div onClick={() => makeActive("caseStudies")} className="w-1/4">
+      <div onClick={() => makeActive("caseStudies")} className="hidden md:block md:w-1/4">
         <Link href="#CaseStudies">
           <div className="m-2 px-16 py-1 hover:bg-black hover:bg-opacity-5 flex justify-center items-center rounded-lg ">
             {"caseStudies" === active && <div className="rectangle"></div>}
@@ -67,7 +55,7 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <div onClick={() => makeActive("contact")} className="w-1/4 flex justify-center items-center">
+      <div onClick={() => makeActive("contact")} className="hidden md:block md:w-1/4">
         <Link href="#Contact">
           <div className="m-2 px-16 py-1 hover:bg-black hover:bg-opacity-5 flex justify-center items-center rounded-lg">
             {"contact" === active && <div className="rectangle"></div>}

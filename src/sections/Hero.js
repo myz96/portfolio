@@ -26,11 +26,11 @@ const Hero = () => {
         </video>
       </div>
       <div className="flex flex-col justify-center items-center h-screen">
-        <h1 className="text-7xl font-bold my-2">michael zhao</h1>
+        <h1 className="text-7xl font-bold my-2 text-center">michael zhao</h1>
         <h2 className="text-lg font-thin my-4">
           // just a boy trying his best to learn //
         </h2>
-        <div className="flex items-center justify-center flex-wrap my-4 max-w-10">
+        <div className="flex items-center justify-center flex-wrap my-4 max-w-10 space-y-4 px-12">
           <motion.a href="/" whileHover={{ y: -4 }}>
             <HTMLIcon className="w-6 mr-3" />
           </motion.a>

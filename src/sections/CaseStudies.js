@@ -42,7 +42,7 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="px-32 py-8 mb-32 max-w-screen-2xl mx-auto" id="CaseStudies">
+    <div className="lg:px-32 lg:py-8 lg:mb-32 max-w-screen-2xl mx-auto p-8 mb-8" id="CaseStudies">
       <h1 className="flex justify-center text-3xl my-4 mb-20 font-bold">
         case studies
       </h1>
